@@ -1,0 +1,11 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.louis.archertraininghelper_ultimatev1.TeamkickoutView
+        android:id="@id/tkv_myview"
+        android:layout_width="400.0dip"
+        android:layout_height="400.0dip"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

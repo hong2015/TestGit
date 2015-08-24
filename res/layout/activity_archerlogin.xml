@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_login" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/llarchername" android:background="#aeffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewname1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_archerlogin_archername" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewname2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/t_blank" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/llarchersex" android:background="#aeffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llarchername" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewsex1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_archerlogin_sex" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewsex2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/t_blank" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llarcherbirthday" android:background="#aeffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llarchersex" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textView1_archer_brithday1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_archerlogin_birthday" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textView_archer_brithday2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/t_blank" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/llarcherlevel" android:background="#aeffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llarcherbirthday" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewlevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_archerlogin_level" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewlevelnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/t_blank" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/llarcherbestscores" android:background="#aeffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llarcherlevel" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewbestscore1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_archerlogin_bestscore" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:id="@id/textViewbestscore2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/t_blank" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/llarcherloginothers" android:background="#aeffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llarcherbestscores" android:layout_alignParentLeft="true">
+        <LinearLayout android:id="@id/lltrainingIntensity" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textView_intensity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="训练强度：" />
+            <Spinner android:id="@id/sptrainingIntensity" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/lltrainingvolume" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textView_trainvolume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="训练量：" />
+            <Spinner android:id="@id/sptrainingvolume" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/llfatigue" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textView_fatigue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="疲劳感：" />
+            <Spinner android:id="@id/spfatigue" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/llweathersp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textView_weather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天气：" />
+            <Spinner android:id="@id/spweather" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/llwindspeed" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textView_windspeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="风速：" />
+            <Spinner android:id="@id/spwindspeed" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/llwinddirection" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textView_winddirection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="风向：" />
+            <Spinner android:id="@id/spwinddirection" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/llssaizhi" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="30.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/textView_saizhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赛制：" />
+            <Spinner android:id="@id/spsaizhi" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/ivarcherimage" android:background="@drawable/archerimg" android:layout_width="150.0dip" android:layout_height="240.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/t_blank" />
+</RelativeLayout>

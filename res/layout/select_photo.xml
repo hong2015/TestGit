@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mobile="http://mobile.blogjava.net">
+    <com.louis.archertraininghelper_ultimatev1.FileBrowser android:id="@id/filebrowser" android:layout_width="fill_parent" android:layout_height="fill_parent" mobile:extName1="jpg" mobile:extName2="jpeg" mobile:fileImage1="@drawable/jpg" mobile:fileImage2="@drawable/jpg" mobile:folderImage="@drawable/folder" mobile:otherFileImage="@drawable/other"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

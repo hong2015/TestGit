@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="LogInCustomTheme" parent="@android:style/Theme">
+        <item name="android:windowTitleSize">60.0dip</item>
+    </style>
+    <style name="AddArcherCustomTheme" parent="@android:style/Theme">
+        <item name="android:windowTitleSize">60.0dip</item>
+    </style>
+</resources>

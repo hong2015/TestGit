@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thx.sjd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconb" android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name=".Welcome_Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/lable_activity" android:name=".Help_Activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".ArcherLogin_activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".ResultData_Activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".Score_Activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".Add_Archer_activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".SelectArcher_activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".Gallery_activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".Editfile" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".ReadTXT" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".MyFileManager" android:screenOrientation="portrait"/>
+        <activity android:label="@string/lable_activity" android:name=".SingleKickout_coach" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_team_kickout_" android:name=".TeamKickout_Activity" android:screenOrientation="portrait"/>
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

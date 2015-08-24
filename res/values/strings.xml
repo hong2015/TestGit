@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EasyArchery</string>
+    <string name="action_settings">Settings</string>
+    <string name="b_welcome_IndividualQualifying">个人排位赛</string>
+    <string name="b_welcome_IndividualKickOut">个人淘汰赛</string>
+    <string name="b_welcome_TeamKickOut">团体淘汰赛</string>
+    <string name="b_welcome_data">统计结果</string>
+    <string name="b_welcome_help">使用说明</string>
+    <string name="t_userguide">"使用说明：
+ 1、打开程序后进入主界面，点击开始统计转入记录界面，点击统计结果转入统计信息界面。
+ 2、在记录界面中首先要进行运动员的登陆，登陆后转入统计环数界面，触摸屏幕并移动到目标位置放开即可确定目标位置，点击靶面下方黄色或绿色文本即可对所选的点进行修改，每六支箭及每六组均可可进行一次保存，点击保存即可记录当前组数据至SD卡中。
+ 3、在图统计信息界面中您可选择运动员以浏览之前的数据信息以便对比记录。
+ 3、在登陆运动员的界面中如首次使用请先添加再进行选择。
+ 4、如您在使用过程中遇到任何问题，或对我们的软件有任何意见和建议请及时联系我们，我们将及时修改。"</string>
+    <string name="t_con">"联系方式：
+ 电子邮箱：wangting430@163.com
+ 联系电话：13593140447
+ 联系人：王霆
+"</string>
+    <string name="lable_helpactivity">使用说明</string>
+    <string name="lable_archerloginactivity">登陆运动员</string>
+    <string name="lable_resultdataactivity">数据统计</string>
+    <string name="b_archerlogin_start">开始</string>
+    <string name="b_archerlogin_addarcher">添加运动员</string>
+    <string name="b_archerlogin_selectarcher">选择运动员</string>
+    <string name="tv_archerlogin_archername">姓名：</string>
+    <string name="t_blank">无</string>
+    <string name="tv_archerlogin_sex">性别：</string>
+    <string name="tv_archerlogin_birthday">出生日期：</string>
+    <string name="tv_archerlogin_level">运动员等级：</string>
+    <string name="tv_archerlogin_bestscore">最佳成绩：</string>
+    <string name="tv_archerlogin_cuyrrenttime">当前时间:</string>
+    <string name="lable_scoreactivity">登录成绩</string>
+    <string name="b_score_save">保存</string>
+    <string name="b_score_showall">显示全部</string>
+    <string name="b_score_notsure">不确定</string>
+    <string name="b_score_clear">清空</string>
+    <string name="b_score_saveall">保存全部</string>
+    <string name="lable_activity">射箭训练电子靶面记录分析系统（单机版）</string>
+    <string name="title_activity_team_kickout_">TeamKickout_Activity</string>
+</resources>

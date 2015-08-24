@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/llname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tV_archername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="姓名：" />
+        <EditText android:id="@id/et_archername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="text">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:id="@id/llsex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/llname" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tvarcher_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性别：" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/rgsex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="性别 ">
+            <RadioButton android:id="@id/rb_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="男" />
+            <RadioButton android:id="@id/rb_woman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:id="@id/llbrithday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/llsex" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tv_brithday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出生日期：" />
+        <EditText android:id="@id/et_brithday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:inputType="date" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/lllevel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llbrithday">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="运动员等级：" />
+        <Spinner android:id="@id/splevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/llbestscore" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lllevel" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tv_archerbestscore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最佳成绩：" />
+        <EditText android:id="@id/et_archerbestscore" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="none">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <Button android:textSize="30.0sp" android:id="@id/buttonselectarcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择头像" android:layout_alignLeft="@id/ivarcherimage" android:layout_alignParentBottom="true" />
+    <Button android:textSize="30.0sp" android:id="@id/b_confirmandback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定添加" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/ivarcherimage" android:layout_width="150.0dip" android:layout_height="240.0dip" android:layout_below="@id/llbestscore" android:layout_alignParentLeft="true" />
+</RelativeLayout>
